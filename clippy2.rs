@@ -24,9 +24,7 @@ fn main() {
     assert!(B);
 }
 
-// https://rust-lang.github.io/rust-clippy/master/index.html#await_holding_refcell_ref
-async fn foo(x: &RefCell<u32>) {
-  let mut y = x.borrow_mut();
-  *y += 1;
-  bar.await;
+// https://rust-lang.github.io/rust-clippy/master/index.html#cast_lossless
+fn as_u64(x: u8) -> u64 {
+    x as u64
 }
