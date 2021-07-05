@@ -16,8 +16,8 @@ fn main() {
     let y = 1_f64 / x;
 
     // https://rust-lang.github.io/rust-clippy/master/index.html#assertions_on_constants
-    assert!(false)
-    assert!(true)
+    assert!(false);
+    assert!(true);
     const B: bool = false;
-    assert!(B)
+    assert!(B);
 }
