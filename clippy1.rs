@@ -14,4 +14,9 @@ fn main() {
     if y != x {
         println!("Success!");
     }
+
+    // https://rust-lang.github.io/rust-clippy/master/index.html#absurd_extreme_comparisons
+    let vec: Vec<isize> = Vec::new();
+    if vec.len() <= 0 {}
+    if 100 > i32::MAX {}
 }

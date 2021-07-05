@@ -10,4 +10,14 @@ fn main() {
         res += x;
     }
     println!("{}", res);
+
+    // https://rust-lang.github.io/rust-clippy/master/index.html#approx_constant
+    let x = 3.14;
+    let y = 1_f64 / x;
+
+    // https://rust-lang.github.io/rust-clippy/master/index.html#assertions_on_constants
+    assert!(false)
+    assert!(true)
+    const B: bool = false;
+    assert!(B)
 }
