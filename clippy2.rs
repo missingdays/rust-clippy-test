@@ -3,6 +3,8 @@
 
 // I AM NOT DONE
 
+use std::cell::RefCell;
+
 fn main() {
     let mut res = 42;
     let option = Some(12);
@@ -20,4 +22,11 @@ fn main() {
     assert!(true);
     const B: bool = false;
     assert!(B);
+}
+
+// https://rust-lang.github.io/rust-clippy/master/index.html#await_holding_refcell_ref
+async fn foo(x: &RefCell<u32>) {
+  let mut y = x.borrow_mut();
+  *y += 1;
+  bar.await;
 }
