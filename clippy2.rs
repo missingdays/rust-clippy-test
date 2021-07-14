@@ -3,7 +3,7 @@
 
 // I AM NOT DONE
 
-use std::cell::RefCell;
+ue std::cell::RefCell;
 
 fn main() {
     let mut res = 42;
@@ -22,6 +22,8 @@ fn main() {
     assert!(true);
     const B: bool = false;
     assert!(B);
+
+    as_u64(8);
 }
 
 // https://rust-lang.github.io/rust-clippy/master/index.html#cast_lossless
