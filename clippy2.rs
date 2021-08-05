@@ -17,6 +17,9 @@ fn main() {
     let x = 3.14;
     let y = 1_f64 / x;
 
+    let z = 3.14;
+    let d = 1_f64 / z;
+
     // https://rust-lang.github.io/rust-clippy/master/index.html#assertions_on_constants
     assert!(false);
     assert!(true);
@@ -30,3 +33,6 @@ fn main() {
 fn as_u64(x: u8) -> u64 {
     x as u64
 }
+
+
+
